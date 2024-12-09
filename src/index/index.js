@@ -1,6 +1,8 @@
 const express = require("express");
 const morgan = require("morgan");
 const { connectDB } = require("../db");
+const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
 
 const app = express();
 
